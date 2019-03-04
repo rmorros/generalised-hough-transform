@@ -34,8 +34,8 @@ for img in images:
     # code for drawing bounding-box in original image at the found location...
 
     # find the half-width and height of template
-    hheight = np.floor(refim.shape[0] / 2) + 1
-    hwidth = np.floor(refim.shape[1] / 2) + 1
+    hheight = np.floor(refim.shape[0] // 2) + 1
+    hwidth = np.floor(refim.shape[1] // 2) + 1
 
     # find coordinates of the box
     rstart = int(max(ridx - hheight, 1))
